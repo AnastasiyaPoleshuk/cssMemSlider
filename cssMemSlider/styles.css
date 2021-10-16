@@ -12,6 +12,16 @@
     padding: 10px;
 }
 
+@media (max-width: 320px){
+    .container{
+        width: 90%;
+        padding: 5px;
+    }
+}
+
+/* HEADER */
+
+
 header{
     padding: 3px;
 }
@@ -23,6 +33,15 @@ h1{
     padding: 5px;
     margin-left: 30%;
 
+}
+
+@media (max-width: 320px){
+    h1{
+        font-size: 20px;
+        letter-spacing: 1px;
+        padding: 15px;
+        margin-left: 14%;
+    }
 }
 
 .line{
@@ -46,10 +65,24 @@ main{
     margin-top: 24px;
 }
 
+@media (max-width: 320px){
+    .slider-item{
+        margin-left: 4%;
+        margin-top: 24px;
+    }
+}
+
 .slide{
     display: none;
     width: 570px;
     height: 500px;
+}
+
+@media (max-width: 320px){
+    .slide{
+        width: 270px;
+        height: 200px;
+    }
 }
 
 .slide-active{
@@ -59,7 +92,12 @@ main{
 .control-box{
     display: grid;
     grid-template-columns: 75% 25%;
-    margin-top: 24px;
+}
+
+@media (max-width: 320px){
+    .control-box{
+        display: block;
+    }
 }
 
 .text{
@@ -67,10 +105,22 @@ main{
     top: 10px;
 }
 
+@media (max-width: 320px){
+    .text{
+        display: none;
+    }
+}
+
 .controls-wrap{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+}
+
+@media (max-width: 320px){
+    .controls-wrap{
+        justify-content: center;
+    }
 }
 
 .control{
@@ -82,17 +132,35 @@ main{
     margin: 10px;
 }
 
+@media (max-width: 320px){
+    .control{
+        width: 10px;
+        height: 10px;
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 30px;
+        margin: 10px;
+    }
+}
+
 .active{
-    width: 15px;
-    height: 15px;
     background: rgb(10, 10, 19);
-    border: 3px solid rgb(255, 255, 255);
-    border-radius: 50px;
-    margin: 10px;
 }
 
 .control:hover{
     background: #9D8665;
+}
+
+
+.text-adeptive{
+    display: none;
+}
+
+@media (max-width: 320px){
+    .text-adeptive{
+        display: block;
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
 }
 
 
@@ -110,8 +178,20 @@ footer{
     margin: 10px;
 }
 
+@media (max-width: 320px){
+    .footer-list{
+        padding: 0px;
+    }
+}
+
 li{
     list-style: none;
+}
+
+@media (max-width: 320px){
+    li{
+        font-size: 20px;
+    }
 }
 
 a{
@@ -122,4 +202,11 @@ a{
 .github{
     width: 40px;
     height: 40px;
+}
+
+@media (max-width: 320px){
+    .github{
+        width: 30px;
+        height: 30px;
+    }
 }
