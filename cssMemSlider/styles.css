@@ -1,0 +1,125 @@
+*{
+    margin: 0px;
+    background: rgb(10, 10, 19);
+    font-size: 30px;
+    font-family: 'IM Fell English SC', serif;
+    color: #9D8665;
+}
+
+.container{
+    width: 85%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+header{
+    padding: 3px;
+}
+
+h1{
+    font-size: 50px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    padding: 5px;
+    margin-left: 30%;
+
+}
+
+.line{
+    width: 100%;
+    height: 1px;
+    background: rgb(52, 52, 58);
+    border: 1px solid rgb(52, 52, 58);
+    border-radius: 50px;
+}
+
+
+/* MAIN */
+
+
+main{
+    margin-top: 10px;
+}
+
+.slider-item{
+    margin-left: 26%;
+    margin-top: 24px;
+}
+
+.slide{
+    display: none;
+    width: 570px;
+    height: 500px;
+}
+
+.slide-active{
+    display: block;
+}
+
+.control-box{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    margin-top: 24px;
+}
+
+.text{
+    position: relative;
+    top: 10px;
+}
+
+.controls-wrap{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.control{
+    width: 15px;
+    height: 15px;
+    background: rgb(255, 255, 255);
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 50px;
+    margin: 10px;
+}
+
+.active{
+    width: 15px;
+    height: 15px;
+    background: rgb(10, 10, 19);
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 50px;
+    margin: 10px;
+}
+
+.control:hover{
+    background: #9D8665;
+}
+
+
+/* FOOTER */
+
+
+footer{
+    margin-top: 10px;
+}
+
+.footer-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #9D8665;
+}
+
+.github{
+    width: 40px;
+    height: 40px;
+}
