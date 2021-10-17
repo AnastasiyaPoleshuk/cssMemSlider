@@ -60,6 +60,13 @@ main{
     margin-top: 10px;
 }
 
+.slider-container{
+    width: 60%;
+    position: relative;
+    display: inline-block;
+}
+
+
 .slider-item{
     margin-left: 26%;
     margin-top: 24px;
@@ -73,9 +80,11 @@ main{
 }
 
 .slide{
-    display: none;
+    /* display: none; */
     width: 570px;
     height: 500px;
+    overflow: hidden;
+    transition: transform 3s;
 }
 
 @media (max-width: 426px){
@@ -85,8 +94,13 @@ main{
     }
 }
 
+.control:hover .slide{
+    transform: translate(100%);
+}
+
 .slide-active{
     display: block;
+    transition: 1s;
 }
 
 .control-box{

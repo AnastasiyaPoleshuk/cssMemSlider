@@ -4,55 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
     <title>Mem Slider</title>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Harry Potter</h1>
-            <div class="line"></div>
-        </header>
-        <main>
-            <div class="slider-container">
-                <div class="slider-item">
-                    <img src="./img/slide_1.jpg" alt="harry potter" class="slide slide-active">
-                </div>
-                <div class="slider-item">
-                    <img src="./img/slide_2.jpg" alt="harry potter" class="slide">
-                </div>
-                <div class="slider-item">
-                    <img src="./img/slide_3.jpg" alt="harry potter" class="slide">
-                </div>
-                <div class="slider-item">
-                    <img src="./img/slide_4.jpeg" alt="harry potter" class="slide">
-                </div>
-            </div>
-            <div class="control-box">
-                <div class="text">slide 1</div>
-                <div class="controls-wrap">
-                    <div class="control active"></div>
-                    <div class="control"></div>
-                    <div class="control"></div>
-                    <div class="control"></div>
-                </div>
-            </div>
-            <div class="text-adeptive">slide 1</div>
-        </main>
-        <footer>
-            <div class="line"></div>
-        <ul class="footer-list">
-            <li>
-                <a href="https://github.com/AnastasiyaPoleshuk">
-                    <img src="./img/github.png" alt="github" class="github">
-                </a>
-            </li>
-            <li>@2021</li>
-        </ul>
-        </footer>
-    </div>
+    <div class="wrap">
+     <input id="slide-1" type="radio" name="slides" checked class="inp">
+     <article class="slide slide-one">
+        <h3 id="text">slide-1</h3>
+     </article>
+     <input id="slide-2" type="radio" name="slides" class="inp">
+     <article class="slide slide-two">
+        <h3 id="text">slide-2</h3>
+     </article>
+     <input id="slide-3" type="radio" name="slides" class="inp">
+     <article class="slide slide-three">
+        <h3 id="text">slide-3</h3>
+     </article>
+     <input id="slide-4" type="radio" name="slides" class="inp">
+     <article class="slide slide-four">
+        <h3 id="text">slide-4</h3>
+     </article>
+     <section>
+         <div class="label">
+            <label for="slide-1">
+            <div class="control" id="control"></div>
+            </label>
+            <label for="slide-2">
+            <div class="control" id="control"></div>
+            </label>
+            <label for="slide-3">
+            <div class="control" id="control"></div>
+            </label>
+            <label for="slide-4">
+            <div class="control" id="control"></div>
+            </label>
+        </div>
+    </section>
+ </div>
 </body>
 </html>

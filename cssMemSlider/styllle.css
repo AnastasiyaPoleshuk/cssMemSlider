@@ -1,0 +1,108 @@
+*{
+    margin: 0px;
+    background: rgb(10, 10, 19);
+    font-size: 30px;
+    font-family: 'IM Fell English SC', serif;
+    color: #9D8665;
+}
+
+#slider{
+    position: relative;
+    text-align: center;
+    top: 5%;
+}
+
+.all{
+    position: relative;
+    text-align: center;
+}
+
+#slides{
+    width: 80%;
+    background: rgb(182, 238, 226);
+}    
+
+.image article{
+    width: 50%;
+    overflow: hidden;
+    /* float: left; */
+    display: inline-block;
+    position: relative;
+    left: -20%;
+
+    line-height: 0px;
+}
+
+#owerflow{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    background: rgb(114, 110, 110);
+}
+
+article img{
+    width: 100%;
+}
+
+#desktop:checked ~ #slider{
+    max-width: 960px;
+}
+
+label, a{
+    cursor: pointer;
+}
+
+.all input{
+    display: none;
+}
+
+#switch1:checked ~ #slides .image{
+    margin-left: 0;
+}
+
+#switch2:checked ~ #slides .image{
+    margin-left: -100%;
+}
+
+#switch3:checked ~ #slides .image{
+    margin-left: -200%;
+}
+
+#switch4:checked ~ #slides .image{
+    margin-left: -300%;
+}
+
+#controles{
+    margin: -25% 0 0 0;
+    width: 100%;
+    height: 50px;
+}
+
+#active label{
+    display: inline-block;
+    border-radius: 10px;
+    width: 15px;
+    height: 15px;
+    background: #9D8665;
+}
+#active label:hover{
+    background: #ffffff;
+    border-color: #9D8665 !important;
+}
+
+#active{
+    margin: 5% 0 0;
+    text-align: center;
+}
+
+#switch1:checked ~ #active label:nth-child(1),
+#switch2:checked ~ #active label:nth-child(2),
+#switch3:checked ~ #active label:nth-child(3),
+#switch4:checked ~ #active label:nth-child(4){
+    background: rgb(10, 10, 19);
+    border-color: #ffffff !important;
+}
+
+#slides .image{
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
