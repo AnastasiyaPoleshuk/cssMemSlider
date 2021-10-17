@@ -1,0 +1,166 @@
+html,
+body {
+	height: 100%;
+	width: 100%;
+	margin:0;
+	padding: 0;
+    background: rgb(10, 10, 19);
+    font-size: 1.3rem;
+    font-family: 'IM Fell English SC', serif;
+    color: #9D8665;
+}
+
+.wrap{
+	height: 100%;
+	width: 85%;
+    margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+
+@media (max-width: 426px){
+    .wrap{
+        width: 90%;
+        padding: 2%;
+    }
+}
+
+section {
+	position: relative;
+	overflow: hidden;
+	left: 0;
+	bottom: 0%;
+	width: 91%;
+	height: 10%;
+	margin-top: 50%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+@media (max-width: 426px){
+    section {
+		width: 100%;
+		height: 10%;
+		margin-top: 85%;
+		display: block;
+	}	
+}
+
+.label{
+	cursor: pointer;
+	display: inline-block;
+	line-height: 4.25em;
+	font-size: 1em;
+	font-weight: bold;
+	padding: 0 1em;
+	display: flex;
+	justify-content: space-around;
+}
+
+@media (max-width: 426px){
+    .label{
+		justify-content: center;
+		/* margin-top: 10%; */
+	}	
+}
+
+label{
+	padding: 0% 9% 3% 0%;
+}
+
+@media (max-width: 426px){
+    label{
+		padding: 2%;
+	}	
+}
+
+.label:last-child{
+	padding-left: 0%;
+}
+
+.slide {
+	height: 80%;
+	width: 70%;
+	position: fixed;
+	top: 5%;
+	left: 120%;
+	margin-left: 15%;
+	background-position: 50% 50%;
+	background-size: cover;
+	transition: left 0s .75s;
+}
+
+@media (max-width: 426px){
+    .slide {
+		height: 45%;
+		width: 90%;
+		position: fixed;
+		top: 5%;
+		left: 120%;
+		margin-left: 5%;	
+	}	
+}
+
+.slide-one {
+	background-image: url('./img/slide_1.jpg');
+}
+
+.slide-two {
+	background-image: url('./img/slide_2.jpg');
+}
+.slide-three {
+	background-image: url('./img/slide_3.jpg');
+}
+.slide-four {
+	background-image: url('./img/slide_4.jpeg');
+}
+
+h3 {
+	margin: 58% 90% 0% 0%;
+	opacity: 0;
+	transform: translateY(100%);
+	transition: transform .5s .5s, opacity .5s;
+}
+
+@media (max-width: 426px){
+    h3 {
+		margin: 95% 83% 0% 0%;
+		font-size: 1rem;
+	}
+}
+
+[id^='slide']:checked + .slide {
+	left: 0;
+	z-index: 100;
+	transition: left .65s ease-out;
+}
+
+[id^='slide']:checked + .slide #text {
+	opacity: 1;
+	transform: translateY(0);
+	transition: all .5s .5s;
+}
+
+.control{
+    width: 15px;
+    height: 15px;
+    background: rgb(255, 255, 255);
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    margin: 90%;
+	cursor: pointer;
+}
+
+.control:hover{
+    background: rgb(10, 10, 19);
+    border: 3px solid #9D8665;
+    border-radius: 50%;
+    margin: 90%;
+	cursor: pointer;
+}
+
+.inp{
+	display: none;
+}
